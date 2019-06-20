@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function CheckEmail(string) {
+        let dieuKien = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (dieuKien.test(string)) {
+            alert("email hợp lệ");
+        }else {
+            alert("email không hợp lệ");
+        }
+    }
+    CheckEmail("lekhachanh123@gmail.com");
+    CheckEmail("@lekhachanh123@gmail.com");
+</script>
+</body>
+</html>
